@@ -1,6 +1,7 @@
 package uk.ac.aber.cs31310;
 
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 
 public class FibGenerator {
 
@@ -24,4 +25,9 @@ public class FibGenerator {
         return values;
     }
 
+    public String fibString(int number) {
+        ArrayList<Integer> values = fib(number);
+        return values.stream().map(Object::toString)
+                  .collect(Collectors.joining(", "));
+    }
 }
