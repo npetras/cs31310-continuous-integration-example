@@ -78,6 +78,6 @@ public class FibonacciGeneratorTest {
     @Test
     public void testGenerates_string_forInput_10() {
         FibGenerator fibGen = new FibGenerator();
-        assertEquals("0, 1, 1, 2, 3, 5, 8, 13, 21, 34", fibGen.fibString(10));
+        assertEquals("0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ", fibGen.fibString(10));
     }
 }
