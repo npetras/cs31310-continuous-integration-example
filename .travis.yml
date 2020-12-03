@@ -1,3 +1,11 @@
 language: java
 
 jdk: openjdk14
+
+after_failure:
+  - cat target/surefire-reports/*.txt
+
+
+
+
+

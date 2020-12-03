@@ -11,7 +11,7 @@ public class FibGenerator {
         if(number == 0 || number == 1) {
             values.add(number);
         }
-        else {
+        else if(number > 1){
             int t1 = 0;
             int t2 = 1;
             for(int i = 0; i < number; i++) {
@@ -27,7 +27,8 @@ public class FibGenerator {
 
     public String fibString(int number) {
         ArrayList<Integer> values = fib(number);
-        return values.stream().map(Object::toString)
-                  .collect(Collectors.joining(", "));
+        return values.stream()
+                .map(Object::toString)
+                .collect(Collectors.joining(", "));
     }
 }
