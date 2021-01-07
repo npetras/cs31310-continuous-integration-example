@@ -9,7 +9,7 @@ public class FibGenerator {
         ArrayList<Integer> values = new ArrayList<>();
 
         if(number == 0 || number == 1) {
-            values.add(number);
+//            values.add(number);
         }
         else if(number > 1){
             int t1 = 0;
