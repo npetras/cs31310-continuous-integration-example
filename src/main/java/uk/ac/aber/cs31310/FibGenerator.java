@@ -4,7 +4,11 @@ import java.util.ArrayList;
 import java.util.stream.Collectors;
 
 public class FibGenerator {
-
+    /**
+     * Generates fibonacci sequences for the number provided
+     * @param number
+     * @return
+     */
     public ArrayList<Integer> fib(int number) {
         ArrayList<Integer> values = new ArrayList<>();
 
